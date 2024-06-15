@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagotchi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tamagotchi</h1>
+        <div class="tamagotchi-container">
+            <img id="tamagotchiImage" src="normal.png" alt="Tamagotchi">
+            <div id="estado">Estado: Normal</div>
+            <div id="nivel">Nivel: 1</div>
+            <div class="bars">
+                <div class="progress-bar" id="barraHambre">
+                    <div class="progress-bar-fill" style="width: 100%;"></div>
+                </div>
+                
+                <div>
+                    <label for="barraFelicidad">Felicidad:</label>
+                    <progress id="barraFelicidad" max="100" value="100"></progress>
+                </div>
+                <div>
+                    <label for="barraLimpieza">Limpieza:</label>
+                    <progress id="barraLimpieza" max="100" value="100"></progress>
+                </div>
+                <div>
+                    <label for="barraEnergia">Energía:</label>
+                    <progress id="barraEnergia" max="100" value="100"></progress>
+                </div>
+                <div>
+                    <label for="barraExperiencia">Experiencia:</label>
+                    <progress id="barraExperiencia" max="100" value="0"></progress>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="alimentar">Alimentar</button>
+                <button id="jugar">Jugar</button>
+                <button id="limpiar">Limpiar</button>
+                <button id="dormir">Dormir</button>
+            </div>
+            <div id="mensajes"></div>
+        </div>
+    </div>
+    <script src="tamagotchi.js"></script>
+</body>
+</html>
